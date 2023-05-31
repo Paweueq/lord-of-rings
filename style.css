@@ -4,6 +4,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 
+#error {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    #all-html {
+        display: none;
+    }
+
+    #error {
+        display: block;
+        color: red;
+        font-weight: 700;
+    }
+
+    * {
+        background: #000000;
+    }
+}
+
+
 :root {
     font-weight: 200;
 }
@@ -22,13 +43,21 @@ body {
     overflow-x: hidden;
 }
 
-.nav-links a {
+.nav-links .link {
     text-decoration: none;
     color: #A4A4A4;
 }
-    .nav-links a:hover {
+    .nav-links .link:hover {
         color: #FFFFFF;
     }
+
+.nav-links .link-special {
+    text-decoration: none;
+    color: #FFA726;
+}
+.nav-links .link-special:hover {
+    color: #FFFFFF;
+}
 
 p {
     margin: 0;
@@ -168,7 +197,7 @@ p {
       }
 
         .c-button {
-            color: #000;
+            color: #FFA726 ;
             font-weight: 700;
             font-size: 10px;
             text-decoration: none;
@@ -779,9 +808,6 @@ p {
 
 
 
-
-
-
 #films {
     height: fit-content;
     width: 80vw;
@@ -871,6 +897,222 @@ p {
         margin-top: 6vh;
         font-size: 1.7em !important;
     }
+
+
+
+#books {
+    width: 85vw;
+    height: fit-content;
+    margin: 40vh auto 40vh auto;
+
+    background-color: #363636;
+    border: 3px solid #FFA726;
+    border-radius: 10px;
+    box-shadow:  28px 28px 56px rgba(181,105,12,0.5);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 5vh 1vw 5vh 1vw;
+}
+
+    .books-begin-text {
+        width: 50vw;
+        height: fit-content;
+        padding: 3vh 4vw 3vh 4vw;
+        border: 3px solid #323232;
+        border-radius: 15px;
+        box-shadow:  28px 28px 56px #262626;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #464646;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        .books-begin-text h1 {
+            text-transform: uppercase;
+            text-shadow:  12px 12px 24px rgba(181,105,12,1);
+            font-size: 3em;
+        }
+
+        .books-begin-text img {
+            margin-left: 10vw;
+            width: 10vw;
+        }
+
+        #books-description {
+            margin: 4vh 20% 4vh 20%;
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        .book-description {
+            width: 22vw;
+            height: 35vh;
+            padding: 3vh 2vw 3vh 2vw;
+            background-color: #464646;
+            border-radius: 15px;
+
+            text-align: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+            .book-description h3 {
+                color: #FFA726;
+            }
+
+            .book-description ul, li {
+                list-style: none;
+                padding: 0;
+                text-align: center;
+
+                margin-left: 8%;
+                margin-right: 8%;
+            }   
+
+
+            #all-books-descriptions {
+                margin-top: 6vh;
+                margin-bottom: 4vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 2.5vw;
+            }
+
+
+#summary {
+    width: 70vw;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3vh 4vw 3vh 4vw;
+    margin: 30vh auto 20vh auto;
+
+    background-color: #2A2A2A;
+    border: 4px solid #626262;
+    box-shadow:  28px 28px 56px #DD2C00;
+    border-radius: 10px;
+}
+
+    .summary-begin-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        background-color: #8A8A8A;
+        border-radius: 15px;
+        width: 50vw;
+
+        margin-bottom: 4vh;
+    }
+
+    .summary-begin-text h1 {
+        text-transform: uppercase;
+        text-shadow: 12px 12px 24px #252525;
+        font-size: 3em;
+    }
+
+    .summary-begin-text img {
+        margin-left: 8vw;
+        width: 10vw;
+    }
+
+    .summary-warning {
+        text-align: center;
+        margin-left: 25%;
+        margin-right: 25%;
+        font-size: 1.2em;
+    }
+
+    .big-warning {
+        color: #DD2C00;
+        font-weight: 500;
+        margin-bottom: 4vh;
+    }
+
+    #summary-text {
+        width: 60vw;
+        height: fit-content;
+        padding: 2vh 2vw 2vh 2vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        background-color: #252525;
+        border-radius: 15px;
+    }
+
+    #summary-text h3 {
+        font-family: 'Dancing Script', cursive;
+        text-shadow: 12px 12px 24px #DD2C00;
+        font-size: 2.5em;
+    }
+
+    #summary-text p {
+        font-size: 1em;
+        text-align: inherit;
+        margin: 0px 10% 5vh 10%;
+        line-height: 1.5;
+    }
+
+
+#dictionary-container {
+    width: 70vw;
+    height: fit-content;
+    padding: 5vh 3vw 5vh 3vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10vh;
+
+    background-color: #464646;
+    border: 3px solid #565656;
+    border-radius: 17px;
+    box-shadow:  28px 28px 56px rgba(181,105,12,0.5);
+}
+
+    #dictionary-container ul, li {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    #dictionary-container h1 {
+            text-transform: uppercase;
+            text-shadow:  12px 12px 24px rgba(181,105,12,1);
+            font-size: 3em;
+            margin-top: 0;
+    }
+
+    #dictionary-list li {
+        margin-bottom: 2vh;
+    }
+
+    .unvisible {
+        display: none;
+    }
+
+    .visible {
+        display: block;
+    }
+
 
 
 /* Bar at the bottom */

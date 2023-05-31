@@ -9,9 +9,14 @@
     <title>Władca obrączek</title>
 </head>
     <body>
-        <div class="background"></div>
+        <div id="error">
+            <h1>Error!</h1>
+            <h4>Strona nie obsługuje takich szerokośći ekranu!</h4>
+            <h4>Spróbuj użyć na komputerze</h4>
+        </div>
+        <div id="all-html">
 
-        <div class="content">
+        <div class="background"></div>
 
         <section class="header">
                 <div class="textHeader">
@@ -33,24 +38,24 @@
                 <div class="links">
                     
                     <button>
-                        <a href="#informnation">Informacje</a> 
+                        <a href="#informnation" class="link">Informacje</a> 
                     </button>
 
                     <button>
-                        <a href="#films">FIlmy</a>
+                        <a href="#films" class="link">FIlmy</a>
                     </button>
 
                     <button>
-                        <a href="#books">Książki</a>
+                        <a href="#books" class="link">Książki</a>
                     </button>
 
                     <button>
-                        Streszczenia
+                        <a href="#summary" class="link">Streszczenie</a>
                     </button>
                 </div>
             
                 <div class="nav-button">
-                    <button class="c-button c-button--gooey"> przekonaj się sam!
+                    <button class="c-button c-button--gooey"><a href="https://gosafir.com/mag/wp-content/uploads/2019/12/Tolkien-J.-The-lord-of-the-rings-HarperCollins-ebooks-2010.pdf" class="link-special">przekonaj się sam!</a>
                         <div class="c-button__blobs">
                         <div></div>
                         <div></div>
@@ -359,20 +364,120 @@
 
 
         <section id="books"> 
-           
+            <div class="books-begin-text">
+                <h1>Książki</h1>
+                <img src="galeria/galeria-podstrony/books-frodo.svg"> 
+            </div>
+
+            <p id="books-description">
+                Każda z książek "Władca Pierścieni" to wielowątkowa i rozbudowana opowieść o walce dobra ze złem w magicznym świecie Śródziemia. Zawierające bogactwo opisów, historii, postaci i symboliki, książki Tolkiena zdobyły ogromną popularność i wpłynęły na gatunek literatury fantastycznej. Przez wiele czytelników uważane są za arcydzieła literatury fantasy i stanowią niezwykłą podróż przez świat pełen przygód, magii i głębokich przemyśleń.
+            </p>
+
+            <div id="all-books-descriptions">
+                <div class="book-description">
+                    <h3>Władca Pierścieni: Drużyna Pierścienia</h3>
+                    <ul class="world-list">
+                        <li>Opowiada o przygodach grupy bohaterów w ich misji zniszczenia Pierścienia Władzy</li>
+                        <li>Eposowa historia pełna walki dobra ze złem, przyjaźni i heroizmu</li>
+                        <li>Pełna mistycyzmu, bogactwa detali i głębokich postaci</li>
+                        <li>Przedstawia różnorodne krainy Śródziemia, takie jak Shire, Rivendell, Mines Tirith, Mordor i wiele innych</li>
+                        <li>Jeden z najważniejszych klasyków literatury fantasy</li>
+                    </ul>
+                </div>
+                <div class="book-description">
+                    <h3>Władca Pierścieni: Dwie Wieże</h3>
+                    <ul class="world-list">
+                        <li>Rozwija wątki z poprzedniej części, podążając za losami bohaterów</li>
+                        <li>Epickie bitwy i wzrastające napięcie w walce przeciwko siłom zła</li>
+                        <li>Nowe postacie i krainy, takie jak Rohan, Isengard, Helms Deep</li>
+                        <li>Tematyka wojny, sojuszy i poświęcenia dla większego dobra</li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="book-description">
+                    <h3>Władca Pierścieni: Powrót króla</h3>
+                    <ul class="world-list">
+                        <li>Kulminacyjny finał historii o Pierścieniu Władzy</li>
+                        <li>Epickie starcie dobra ze złem i losy bohaterów osiągają punkt kulminacyjny</li>
+                        <li>Emocjonujące momenty, poświęcenie i zaskakujące zwroty akcji</li>
+                        <li>Rozwiązanie wątków i zakończenie epickiej sagi</li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="summary">
+            <div class="summary-begin-text">
+                <h1>streszczenie</h1>
+                <img src="galeria/galeria-podstrony/summary-elf.svg">
+            </div>
+
+            <p class="summary-warning">Jesteś pewny że chcesz dowiedzieć się co działo się w tak fascynującej książce?</p>
+            <p class="summary-warning big-warning">Nie ma już odwrotu!</p>
+
+            <div id="summary-text">
+                <h3>Władca pierścieni</h3>
+                <p>W pełnym emocji streszczeniu "Władcy Pierścieni" przenosimy się do magicznego Śródziemia, gdzie losy bohaterów splatają się w niezwykłą historię. Pierwszym spotkaniem jest spokojna i idylliczna kraina Shire, gdzie spotykamy Frodo Bagginsa, młodego hobbita. Nagły pojawienie się tajemniczego Pierścienia Władzy zmienia jego życie i zaczyna się niebezpieczna misja.
+
+                    Razem z wiernymi przyjaciółmi, takimi jak Samwise Gamgee, Merry i Pippin, Frodo wyrusza w pełną niebezpieczeństw podróż przez lasy, góry i rzeki. Ich odwaga i determinacja spotykają się z nieustającymi zagrożeniami, od krwiożerczych Orków po zjawiskową piękność Elronda i jego Rady.
+                    
+                    Spotykamy też potężnych czarodziejów, takich jak błyskotliwy Gandalf, który prowadzi Frodo przez labirynt tajemnic i odkrywa mroczne plany Ciemnego Władcę Saurona. W konfrontacji ze złem, bohaterowie doświadczają strachu, zwątpienia, ale także nadziei i siły woli.
+                    
+                    W ich podróży poznajemy różnorodne krainy Śródziemia, takie jak tajemniczy las Lothlórien, rycerski Gondor czy nieprzenikniony Mordor. Każda z tych miejscowości wzbudza różnorodne emocje, od zachwytu nad naturalnym pięknem po lęk przed ciemnością i przemocą.
+                    
+                    Bohaterowie muszą zmierzyć się z własnymi słabościami, pokonać wewnętrzne demony i podjąć trudne decyzje, które mają wpływ na przyszłość całego Śródziemia. Ich walka dobra ze złem kulminuje w epickiej bitwie na polach Pelennoru, gdzie odwaga i poświęcenie decydują o losie światów.
+                    
+                    Ostateczna konfrontacja między Frodo a Sauronem jest napięta i pełna dramatyzmu. Chwila, gdy Pierścień Władzy jest niszczone, przynosi ulgę, ale także smutek za utraconymi bliskimi i cierpieniem, jakie bohaterowie przeszli w trakcie swojej podróży.
+                    
+                    Niesamowite emocje towarzyszą nam przez całą opowieść. Od ekscytacji podczas pojedynków, po wzruszenie, gdy bohaterowie wykazują odwagę i poświęcenie. Nie brakuje też momentów smutku i żalu za utraconymi, które przemykają przez nasze serca.
+                    
+                    "Władca Pierścieni" to nie tylko przygoda, ale również podróż emocjonalna. To opowieść o miłości, lojalności, przyjaźni i siły ludzkiego ducha w obliczu największych trudności. Książka ta zostawia niezatarte ślady w sercach czytelników, zachwycając ich magią, emocjami i niezapomnianymi postaciami.</p>
+            </div>
         </section>
 
 
 
-
-
-
-        <section class="more">
+        <section class="more" id="more">
             <h1>Język w książce jest ciężki!</h1>
             <p>Aby ułatwić sobie czytanie fascynującej książki, sprawdź co znaczą najważniejsze zwroty</p>
             <br>
-            <a href="" class="btn-end">ZOBACZ</a>
+            <a id="dictionary" class="btn-end">ZOBACZ</a>
         </section>
+
+
+        <div class="unvisible" id="container-value">
+            <div id="dictionary-container">
+                <h1>Słownik</h1>
+                <ul id="dictionary-list">
+                    <li><b>Mithril</b><br>Wysoko ceniony i niezwykle lekki metal występujący w Śródziemiu. Jest to jedna z najcenniejszych substancji, często używana do wykonywania zbroi.</li>
+                    <li><b>Istari</b><br>Rasa czarodziejów, wysłana do Śródziemia, aby przeciwstawić się Sauronowi i jego siłom. Gandalf, Saruman i Radagast są przykładami Istari.</li>
+                    <li><b>Valinor</b><br>Kraina na zachodzie Śródziemia, zamieszkana przez Valar - potężne istoty o boskim statusie. Valinor jest uważany za raj i miejsce, w którym panuje wieczna harmonia.</li>
+                    <li><b>Ents</b><br>Olbrzymie istoty przypominające drzewa, posiadające świadomość i zdolność do mówienia. Ents chronią lasy i przyrodę Śródziemia.</li>
+                    <li><b>Nazgûl</b><br>Dziewięciu królów ludzi, którzy zostali uwikłani przez Saurona w pierścienie władzy, stając się jego niewidzialnymi i śmiertelnymi sługami. Są nazywani również Czarnymi Jeźdźcami.</li>
+                    <li><b>Palantír</b><br>Magiczne kryształowe kule, które umożliwiają komunikację na odległość oraz oglądanie odległych miejsc i wydarzeń. Palantíry były używane przez wielu bohaterów, w tym przez Sarumana i Denethora.</li>
+                    <li><b>Balrog</b><br>Potężne stworzenie o ognistym wyglądzie, które zamieszkuje podziemne kopalnie i tunele. Balrogi są niebezpiecznymi przeciwnikami, a jeden z nich, znanym jako Durin's Bane, stoczył legendarną walkę z Gandalfem.</li>
+                    <li><b>Valar</b><br>Potężne istoty o boskim statusie, które mają władzę nad naturą i losami Śródziemia. Są to starsze istoty niż elfy i ludzie, i mają za zadanie chronić świat przed złem.</li>
+                    <li><b>Arda</b><br>Świat stworzony przez Ilúvatara, najwyższego boga w mitologii Śródziemia. Arda jest głównym kontynentem, na którym rozgrywają się wydarzenia powieści.</li>
+                    <li><b>Istya</b><br>Czysta, magiczna substancja, która jest podstawą magii w Śródziemiu. Istya występuje w różnych formach, takich jak woda, powietrze i światło, i jest wykorzystywana przez czarodziejów i inne magiczne istoty do wykonania czarów i zaklęć.</li>
+                    <li><b>Eä</b><br>Słowo oznaczające "bycie" lub "istnienie" w języku Valar. Jest często używane w kontekście tworzenia świata i potęgi Ilúvatara.</li>
+                    <li><b>Orthanc</b><br>Wysoka wieża znajdująca się w Isengardzie, będąca siedzibą Sarumana. Jest to również nazwa samego budynku, który jest silnie ufortyfikowany.</li>
+                    <li><b>Eowyn</b><br>Księżniczka Rohanu, córka króla Théodena. Jest odważną i niezależną kobietą, która walczy u boku Aragorna w bitwie o Pelennor.</li>
+                    <li><b>Gollum</b><br>Postać, która kiedyś nosiła imię Sméagol. Gollum jest wyniszczonego umysłu i zdeformowanym hobbitowym nosicielem Jedynego Pierścienia.</li>
+                    <li><b>Barad-dûr</b><br>Potężna twierdza Saurona, położona w Mordorze. Jest to centralne miejsce jego władzy i siedziba Czarnego Władcy.</li>
+                    <li><b>Ithilien</b><br>Piękna kraina leżąca na wschód od Mordoru. Jest to teren zamieszkiwany przez Dunedainów i elfy, z bujnymi lasami i pachnącymi ogrodami.</li>
+                    <li><b>Numenor</b><br>Wielkie królestwo ludzi, które zostało zniszczone przez Ilúvatara ze względu na próbę ludzi zdobycia nieśmiertelności. Numenor jest miejscem narodzin Aragorna.</li>
+                    <li><b>Morgul</b><br>Nazwa doliny i twierdzy znajdujących się na wschodnich granicach Gondoru. Jest to siedziba Czarnych Jeźdźców i miejsce grozy i zepsucia.</li>
+                    <li><b>Harad</b><br>Egzotyczne i niezbadane ziemie na południe od Gondoru, zamieszkiwane przez różnorodne plemiona i istoty, takie jak Haradrim i Mumakile.</li>
+                    <li><b>Angmar</b><br>Królestwo Saurona, położone na północy Śródziemia. Angmar było miejscem narodzin czarnoksiężnika zwanego Nekromantą.</li>
+                </ul>
+
+                <a id="back" class="btn-end">WRÓĆ</a>
+            </div>
+        </div>
 
 
 <!--  Bottom Bar  -->
@@ -420,7 +525,7 @@
             </div>
 
         </div>
-    
+    </div>
     <script>
         /* Efekt znikającego tła */
         window.addEventListener("scroll", function() {
@@ -452,5 +557,26 @@
             let background = document.querySelector(".description");
             background.style.opacity = 0 + (scrollPosition / 700); 
         });
+
+
+
+        const dictionary = document.getElementById("dictionary");
+        const dictionaryValue = document.getElementById("container-value");
+        const container = document.getElementById("more");
+        const back = document.getElementById("back");
+        dictionary.addEventListener("click", () => {
+            dictionaryValue.classList.remove("unvisible");
+            container.classList.remove("visible")
+
+            dictionaryValue.classList.add("visible");
+            container.classList.add("unvisible")
+        })
+        back.addEventListener("click", () => {
+            dictionaryValue.classList.remove("visible");
+            container.classList.remove("unvisible")
+
+            dictionaryValue.classList.add("unvisible");
+            container.classList.add("visible")
+        })
     </script>
 </html>
