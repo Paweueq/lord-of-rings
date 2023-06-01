@@ -11,7 +11,7 @@ html {
 @import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Headland+One&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 #error {
     display: none;
@@ -146,7 +146,7 @@ p {
 }
 
     .icon-navigation-bar {
-        width: 5vh;
+        width: 8vh;
         margin-left: 5vw;
         filter: brightness(65%);
         transition: 0.2s ease-in-out;
@@ -344,11 +344,13 @@ p {
             text-align: left;
 
             align-items: center;
+            justify-content: center;
 
             background-color: #565656;
             border-radius: 10px;
 
-            padding-bottom: 50px;
+            padding-bottom: 20px;
+            padding-top: 20px;
             padding-left: 20px;
 
             margin-right: 60px;
@@ -365,11 +367,12 @@ p {
           }
 
           .quote-value {
-                position: relative;
-                top: 50%;
-                transform: translateY(-50%);
+                /* position: relative; */
+                /* top: 50%; */
+                /* transform: translateY(-50%); */
                 text-align: left;
-                margin-top: 15px;
+                justify-content: center;
+                align-items: center;
           }
 
 
@@ -611,7 +614,8 @@ p {
     }
 
     .opinions h2 {
-        font-family: 'Dancing Script', cursive;
+        font-family: 'Pacifico', cursive;
+        font-weight: 700;
         margin: -3vh auto 4vh auto;
         font-size: 4.5em;
         text-align: center;
