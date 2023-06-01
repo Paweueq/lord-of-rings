@@ -328,8 +328,8 @@ p {
           blockquote {
             margin-left: 70px;
 
-            margin-top: auto;
-            margin-bottom: auto;
+            /* margin-top: auto; */
+            /* margin-bottom: auto; */
           }
           
           .quote {
@@ -630,6 +630,7 @@ p {
             text-align: center;
             justify-content: center;
             align-items: center;
+            padding: 2vh 1vw 2ch 1vw;
         }
 
         .opinion p {
