@@ -337,7 +337,7 @@ p {
             display: inline-block;
             vertical-align: top;
             width: 20vw;
-            height: 8vw;
+            height: fit-content;
             box-sizing: border-box;
             text-align: left;
 
@@ -619,7 +619,7 @@ p {
             margin-left: 7vw;
 
             width: 25vw;
-            height: 20vh;
+            height: fit-content;
             background-color: #565656;
             border-radius: 15px;
             box-shadow:  16px 16px 35px rgba(181,105,12,0.5);
@@ -961,7 +961,7 @@ p {
 
         .book-description {
             width: 22vw;
-            height: 35vh;
+            height: fit-content;
             padding: 3vh 2vw 3vh 2vw;
             background-color: #464646;
             border-radius: 15px;
