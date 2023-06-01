@@ -335,7 +335,7 @@ p {
           .quote {
             clear: both;
             display: inline-block;
-            vertical-align: top;
+            /* vertical-align: top; */
             width: 20vw;
             height: fit-content;
             box-sizing: border-box;
@@ -373,7 +373,7 @@ p {
 
     .gallery-and-opinions {
         width: 100vw;
-        height: 90vh;
+        height: fit-content;
         margin-top: 15vh;
         margin-bottom: 20vh;
 
@@ -391,6 +391,8 @@ p {
             grid-template-columns: repeat(12, 5vw);
             grid-template-rows: repeat(13, 5vw);
             grid-gap: 0.5vw;
+            margin-top: auto;
+            margin-bottom: auto;
         }
 
             .image {
